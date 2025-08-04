@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.mycompany.parqueoseguroadminapp.controller.AdminDashboardController">
+
+    <top>
+        <Label text="Panel del Administrador" style="-fx-font-size: 24px; -fx-padding: 10;" />
+    </top>
+
+    <center>
+        <VBox spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+            <Button text="Ver Reservas"  minWidth="200"/>
+            <Button text="Gestionar Parqueaderos"  minWidth="200"/>
+            <Button text="Ver Usuarios" minWidth="200"/>
+            <Button text="Ver Reportes" minWidth="200"/>
+            <Button text="Cerrar Sesión" onAction="#handleCerrarSesion" minWidth="200"/>
+        </VBox>
+    </center>
+</BorderPane>
+

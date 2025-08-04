@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" spacing="10" 
+      fx:controller="com.mycompany.parqueoseguroadminapp.controller.InicioController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    
+    <children>
+        <Label text="Inicio de Sesión" style="-fx-font-size: 18px;" />
+        <TextField fx:id="correoField" promptText="Correo Electrónico"/>
+        <PasswordField fx:id="contrasenaField" promptText="Contraseña"/>
+        <Button text="Iniciar Sesión" onAction="#iniciarSesion"/>
+        
+        <Button text="Registrarse - Admin" onAction="#toRegister"/>
+    </children>
+</VBox>
+
